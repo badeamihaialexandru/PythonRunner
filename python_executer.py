@@ -11,7 +11,7 @@ class PythonExecutor():
             mode='a'
         else:
             mode='w'
-        with open('/history.txt',mode) as file:
+        with open('history.txt',mode) as file:
             file.write(code+'\n')
 
     def get_executions_history(self):
