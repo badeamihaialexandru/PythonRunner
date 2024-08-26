@@ -13,8 +13,3 @@ class PythonExecutor():
             mode='w'
         with open('/history.txt',mode) as file:
             file.write(code+'\n')
-    
-executor=PythonExecutor()
-
-executor.execute_code("""a=3+4 
-print(a)""")
