@@ -18,9 +18,3 @@ class PythonExecutor():
         with open("history.txt", 'r') as file:
             content=file.read()
             return content
-    
-executor=PythonExecutor()
-
-executor.execute_code("""a=3+4 
-print(a)""")
-print(executor.get_executions_history())
