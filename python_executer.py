@@ -13,3 +13,8 @@ class PythonExecutor():
             mode='w'
         with open('/history.txt',mode) as file:
             file.write(code+'\n')
+
+    def get_executions_history(self):
+        with open("history.txt", 'r') as file:
+            content=file.read()
+            return content
