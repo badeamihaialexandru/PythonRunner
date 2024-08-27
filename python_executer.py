@@ -26,3 +26,8 @@ class PythonExecutor():
         with open("history.txt", 'r') as file:
             content=file.read()
             return content
+        
+
+
+
+#scrieti o functie care genereaza o

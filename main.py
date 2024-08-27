@@ -1,9 +1,13 @@
-from flask import Flask,request
+from flask import Flask,request,render_template
 from python_executer import *
 
 app = Flask(__name__)
 
 pythonEx = PythonExecutor()
+
+@app.route('/',methods=['GET'])
+def home():
+    return render_template('index.html')
 
 @app.route('/execute',methods = ['POST'])
 def execute():
